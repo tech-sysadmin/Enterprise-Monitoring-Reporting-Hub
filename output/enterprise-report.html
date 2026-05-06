@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enterprise Monitoring Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 24px; }
+        .section { margin-bottom: 32px; }
+        .header { font-size: 24px; margin-bottom: 12px; }
+        .badge { padding: 4px 8px; border-radius: 4px; color: #fff; }
+        .green { background-color: #28a745; }
+        .yellow { background-color: #ffc107; color: #000; }
+        .red { background-color: #dc3545; }
+        .gray { background-color: #6c757d; }
+        table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+        th, td { border: 1px solid #ddd; padding: 8px; }
+        th { background: #f4f4f4; }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="header">Enterprise Monitoring Report</div>
+        <div>Generated: 2026-05-06 11:50:16</div>
+    </div>
+
+    <div class="section">
+        <div class="header">Summary</div>
+        <ul>
+            <li>Total AD users: 5</li>
+            <li>Active users: 4</li>
+            <li>Inactive users: </li>
+            <li>Total endpoints: 5</li>
+            <li>Compliant devices: 3</li>
+            <li>Non-compliant devices: 2</li>
+            <li>Total servers: 5</li>
+            <li>Critical servers: </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="header">Active Directory Users</div>
+        <table>
+            <thead><tr><th>Username</th><th>Department</th><th>Status</th></tr></thead>
+            <tbody>            <tr><td>admin.user</td><td>IT</td><td><span class='badge green'>Active</span></td></tr>
+            <tr><td>jdoe</td><td>Finance</td><td><span class='badge green'>Active</span></td></tr>
+            <tr><td>asmith</td><td>HR</td><td><span class='badge yellow'>Inactive</span></td></tr>
+            <tr><td>mwalker</td><td>Sales</td><td><span class='badge green'>Active</span></td></tr>
+            <tr><td>tnguyen</td><td>Engineering</td><td><span class='badge green'>Active</span></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="header">Endpoint Compliance</div>
+        <table>
+            <thead><tr><th>Device Name</th><th>Compliance Status</th><th>Last Check-In</th></tr></thead>
+            <tbody>            <tr><td>CORP-SRV-01</td><td><span class='badge green'>Compliant</span></td><td>2026-05-06T08:12:00Z</td></tr>
+            <tr><td>CORP-LAP-02</td><td><span class='badge red'>NonCompliant</span></td><td>2026-05-05T14:30:00Z</td></tr>
+            <tr><td>MOBILE-03</td><td><span class='badge green'>Compliant</span></td><td>2026-05-06T07:05:00Z</td></tr>
+            <tr><td>CORP-WIN-04</td><td><span class='badge red'>NonCompliant</span></td><td>2026-05-04T20:44:00Z</td></tr>
+            <tr><td>GUEST-05</td><td><span class='badge green'>Compliant</span></td><td>2026-05-06T09:20:00Z</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="header">Server Health Summary</div>
+        <table>
+            <thead><tr><th>Server</th><th>CPU %</th><th>Memory %</th><th>Disk Status</th><th>Service Status</th></tr></thead>
+            <tbody>            <tr><td>DC01</td><td>28</td><td>42</td><td><span class='badge green'>OK</span></td><td><span class='badge green'>OK</span></td></tr>
+            <tr><td>APP01</td><td>77</td><td>68</td><td><span class='badge yellow'>WARN</span></td><td><span class='badge yellow'>WARN</span></td></tr>
+            <tr><td>FILESERVER01</td><td>52</td><td>59</td><td><span class='badge green'>OK</span></td><td><span class='badge green'>OK</span></td></tr>
+            <tr><td>WEB01</td><td>65</td><td>74</td><td><span class='badge yellow'>WARN</span></td><td><span class='badge green'>OK</span></td></tr>
+            <tr><td>DB01</td><td>91</td><td>83</td><td><span class='badge red'>FAIL</span></td><td><span class='badge yellow'>WARN</span></td></tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

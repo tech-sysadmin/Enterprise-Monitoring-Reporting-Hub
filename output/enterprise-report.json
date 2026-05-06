@@ -1,0 +1,104 @@
+﻿{
+    "Summary":  {
+                    "ReportGenerated":  "2026-05-06 11:50:16",
+                    "TotalUsers":  5,
+                    "ActiveUsers":  4,
+                    "InactiveUsers":  null,
+                    "TotalEndpoints":  5,
+                    "CompliantDevices":  3,
+                    "NonCompliantDevices":  2,
+                    "TotalServers":  5,
+                    "CriticalServers":  null
+                },
+    "ADUsers":  [
+                    {
+                        "Username":  "admin.user",
+                        "Department":  "IT",
+                        "Status":  "Active"
+                    },
+                    {
+                        "Username":  "jdoe",
+                        "Department":  "Finance",
+                        "Status":  "Active"
+                    },
+                    {
+                        "Username":  "asmith",
+                        "Department":  "HR",
+                        "Status":  "Inactive"
+                    },
+                    {
+                        "Username":  "mwalker",
+                        "Department":  "Sales",
+                        "Status":  "Active"
+                    },
+                    {
+                        "Username":  "tnguyen",
+                        "Department":  "Engineering",
+                        "Status":  "Active"
+                    }
+                ],
+    "EndpointStatus":  [
+                           {
+                               "DeviceName":  "CORP-SRV-01",
+                               "ComplianceStatus":  "Compliant",
+                               "LastCheckIn":  "2026-05-06T08:12:00Z"
+                           },
+                           {
+                               "DeviceName":  "CORP-LAP-02",
+                               "ComplianceStatus":  "NonCompliant",
+                               "LastCheckIn":  "2026-05-05T14:30:00Z"
+                           },
+                           {
+                               "DeviceName":  "MOBILE-03",
+                               "ComplianceStatus":  "Compliant",
+                               "LastCheckIn":  "2026-05-06T07:05:00Z"
+                           },
+                           {
+                               "DeviceName":  "CORP-WIN-04",
+                               "ComplianceStatus":  "NonCompliant",
+                               "LastCheckIn":  "2026-05-04T20:44:00Z"
+                           },
+                           {
+                               "DeviceName":  "GUEST-05",
+                               "ComplianceStatus":  "Compliant",
+                               "LastCheckIn":  "2026-05-06T09:20:00Z"
+                           }
+                       ],
+    "ServerHealth":  [
+                         {
+                             "ServerName":  "DC01",
+                             "CPUUsage":  "28",
+                             "MemoryUsage":  "42",
+                             "DiskStatus":  "OK",
+                             "ServiceStatus":  "OK"
+                         },
+                         {
+                             "ServerName":  "APP01",
+                             "CPUUsage":  "77",
+                             "MemoryUsage":  "68",
+                             "DiskStatus":  "WARN",
+                             "ServiceStatus":  "WARN"
+                         },
+                         {
+                             "ServerName":  "FILESERVER01",
+                             "CPUUsage":  "52",
+                             "MemoryUsage":  "59",
+                             "DiskStatus":  "OK",
+                             "ServiceStatus":  "OK"
+                         },
+                         {
+                             "ServerName":  "WEB01",
+                             "CPUUsage":  "65",
+                             "MemoryUsage":  "74",
+                             "DiskStatus":  "WARN",
+                             "ServiceStatus":  "OK"
+                         },
+                         {
+                             "ServerName":  "DB01",
+                             "CPUUsage":  "91",
+                             "MemoryUsage":  "83",
+                             "DiskStatus":  "FAIL",
+                             "ServiceStatus":  "WARN"
+                         }
+                     ]
+}
