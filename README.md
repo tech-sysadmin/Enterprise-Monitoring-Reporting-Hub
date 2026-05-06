@@ -1,6 +1,6 @@
 ## 🛡 SOC Monitoring Dashboard
 
-![SOC Dashboard](screenshots/soc-dashboard.png)
+![SOC Dashboard](screenshots/soc-dashboard-v2.png)
 
 This dashboard simulates enterprise SOC monitoring with:
 - Active Directory tracking
