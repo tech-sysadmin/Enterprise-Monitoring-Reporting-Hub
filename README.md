@@ -1,3 +1,14 @@
+## 🛡 SOC Monitoring Dashboard
+
+![SOC Dashboard](screenshots/soc-dashboard.png)
+
+This dashboard simulates enterprise SOC monitoring with:
+- Active Directory tracking
+- Endpoint compliance monitoring
+- Server health metrics
+- Real-time alert feed
+
+
 # Enterprise Monitoring Reporting Hub
 
 Enterprise Monitoring Reporting Hub is a production-ready PowerShell monitoring toolkit that aggregates simulated enterprise system data and generates a unified operational report.
