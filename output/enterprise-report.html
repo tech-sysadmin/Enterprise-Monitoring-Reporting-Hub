@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <title>Enterprise SOC Monitoring Dashboard</title>
 
+    <!-- AUTO REFRESH (LIVE SIMULATION) -->
+    <script>
+        setTimeout(() => {
+            location.reload();
+        }, 10000);
+    </script>
+
     <style>
         body {
             background-color: #0d1117;
@@ -52,7 +59,6 @@
         .green { background-color: #238636; color: white; }
         .yellow { background-color: #d29922; color: black; }
         .red { background-color: #f85149; color: white; }
-        .gray { background-color: #6c757d; color: white; }
 
         tr:hover {
             background-color: #21262d;
@@ -66,7 +72,7 @@
     <div class="section">
         <div class="header">🛡 Enterprise SOC Monitoring Dashboard</div>
         <div>Status: 🟢 Operational</div>
-        <div>Generated: 2026-05-06 11:51:11</div>
+        <div>Last Refresh: Auto (10s cycle)</div>
     </div>
 
     <!-- SUMMARY -->
@@ -89,20 +95,12 @@
         <div class="header">Active Directory Users</div>
 
         <table>
-            <thead>
-                <tr>
-                    <th>Username</th>
-                    <th>Department</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>admin.user</td><td>IT</td><td><span class="badge green">Active</span></td></tr>
-                <tr><td>jdoe</td><td>Finance</td><td><span class="badge green">Active</span></td></tr>
-                <tr><td>asmith</td><td>HR</td><td><span class="badge yellow">Inactive</span></td></tr>
-                <tr><td>mwalker</td><td>Sales</td><td><span class="badge green">Active</span></td></tr>
-                <tr><td>tnguyen</td><td>Engineering</td><td><span class="badge green">Active</span></td></tr>
-            </tbody>
+            <tr><th>Username</th><th>Department</th><th>Status</th></tr>
+            <tr><td>admin.user</td><td>IT</td><td><span class="badge green">Active</span></td></tr>
+            <tr><td>jdoe</td><td>Finance</td><td><span class="badge green">Active</span></td></tr>
+            <tr><td>asmith</td><td>HR</td><td><span class="badge yellow">Inactive</span></td></tr>
+            <tr><td>mwalker</td><td>Sales</td><td><span class="badge green">Active</span></td></tr>
+            <tr><td>tnguyen</td><td>Engineering</td><td><span class="badge green">Active</span></td></tr>
         </table>
     </div>
 
@@ -111,45 +109,40 @@
         <div class="header">Endpoint Compliance</div>
 
         <table>
-            <thead>
-                <tr>
-                    <th>Device Name</th>
-                    <th>Compliance Status</th>
-                    <th>Last Check-In</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>CORP-SRV-01</td><td><span class="badge green">Compliant</span></td><td>2026-05-06T08:12:00Z</td></tr>
-                <tr><td>CORP-LAP-02</td><td><span class="badge red">Non-Compliant</span></td><td>2026-05-05T14:30:00Z</td></tr>
-                <tr><td>MOBILE-03</td><td><span class="badge green">Compliant</span></td><td>2026-05-06T07:05:00Z</td></tr>
-                <tr><td>CORP-WIN-04</td><td><span class="badge red">Non-Compliant</span></td><td>2026-05-04T20:44:00Z</td></tr>
-                <tr><td>GUEST-05</td><td><span class="badge green">Compliant</span></td><td>2026-05-06T09:20:00Z</td></tr>
-            </tbody>
+            <tr><th>Device</th><th>Status</th><th>Last Check-In</th></tr>
+            <tr><td>CORP-SRV-01</td><td><span class="badge green">Compliant</span></td><td>2026-05-06</td></tr>
+            <tr><td>CORP-LAP-02</td><td><span class="badge red">Non-Compliant</span></td><td>2026-05-05</td></tr>
+            <tr><td>MOBILE-03</td><td><span class="badge green">Compliant</span></td><td>2026-05-06</td></tr>
+            <tr><td>CORP-WIN-04</td><td><span class="badge red">Non-Compliant</span></td><td>2026-05-04</td></tr>
+            <tr><td>GUEST-05</td><td><span class="badge green">Compliant</span></td><td>2026-05-06</td></tr>
         </table>
     </div>
 
     <!-- SERVERS -->
     <div class="section">
-        <div class="header">Server Health Summary</div>
+        <div class="header">Server Health</div>
 
         <table>
-            <thead>
-                <tr>
-                    <th>Server</th>
-                    <th>CPU %</th>
-                    <th>Memory %</th>
-                    <th>Disk Status</th>
-                    <th>Service Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>DC01</td><td>28</td><td>42</td><td><span class="badge green">OK</span></td><td><span class="badge green">OK</span></td></tr>
-                <tr><td>APP01</td><td>77</td><td>68</td><td><span class="badge yellow">WARN</span></td><td><span class="badge yellow">WARN</span></td></tr>
-                <tr><td>FILESERVER01</td><td>52</td><td>59</td><td><span class="badge green">OK</span></td><td><span class="badge green">OK</span></td></tr>
-                <tr><td>WEB01</td><td>65</td><td>74</td><td><span class="badge yellow">WARN</span></td><td><span class="badge green">OK</span></td></tr>
-                <tr><td>DB01</td><td>91</td><td>83</td><td><span class="badge red">FAIL</span></td><td><span class="badge yellow">WARN</span></td></tr>
-            </tbody>
+            <tr><th>Server</th><th>CPU</th><th>Memory</th><th>Status</th></tr>
+            <tr><td>DC01</td><td>28%</td><td>42%</td><td><span class="badge green">OK</span></td></tr>
+            <tr><td>APP01</td><td>77%</td><td>68%</td><td><span class="badge yellow">WARN</span></td></tr>
+            <tr><td>FILE01</td><td>52%</td><td>59%</td><td><span class="badge green">OK</span></td></tr>
+            <tr><td>WEB01</td><td>65%</td><td>74%</td><td><span class="badge yellow">WARN</span></td></tr>
+            <tr><td>DB01</td><td>91%</td><td>83%</td><td><span class="badge red">CRITICAL</span></td></tr>
         </table>
+    </div>
+
+    <!-- ALERT FEED -->
+    <div class="section">
+        <div class="header">🚨 Live Alert Feed</div>
+
+        <ul>
+            <li><span class="badge red">CRITICAL</span> DB01 CPU exceeded 90%</li>
+            <li><span class="badge yellow">WARNING</span> Endpoint CORP-LAP-02 non-compliant</li>
+            <li><span class="badge green">INFO</span> AD login event recorded for jdoe</li>
+            <li><span class="badge yellow">WARNING</span> APP01 memory trending high</li>
+            <li><span class="badge green">INFO</span> Backup completed successfully</li>
+        </ul>
     </div>
 
 </body>
