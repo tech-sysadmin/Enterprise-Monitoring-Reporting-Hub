@@ -7,3 +7,8 @@
 [2026-05-06 11:50:16] [Get-EndpointReport] [OK] Endpoint report generated with 5 devices
 [2026-05-06 11:50:16] [Get-ServerHealth] [OK] Server health report generated with 5 servers
 [2026-05-06 11:50:16] [Invoke-ReportAggregator] [OK] Reports written to C:\Projects\Enterprise-Monitoring-Reporting-Hub\scripts\..\output\enterprise-report.html and C:\Projects\Enterprise-Monitoring-Reporting-Hub\scripts\..\output\enterprise-report.json
+[2026-05-06 11:51:11] [Invoke-ReportAggregator] [OK] Starting aggregation process.
+[2026-05-06 11:51:11] [Get-ADReport] [OK] AD report generated with 5 users
+[2026-05-06 11:51:11] [Get-EndpointReport] [OK] Endpoint report generated with 5 devices
+[2026-05-06 11:51:11] [Get-ServerHealth] [OK] Server health report generated with 5 servers
+[2026-05-06 11:51:11] [Invoke-ReportAggregator] [OK] Reports written to C:\Projects\Enterprise-Monitoring-Reporting-Hub\scripts\..\output\enterprise-report.html and C:\Projects\Enterprise-Monitoring-Reporting-Hub\scripts\..\output\enterprise-report.json
